@@ -2,6 +2,8 @@
 
 A modern car rental platform built with cutting-edge technologies to provide a seamless vehicle rental experience.
 
+![Cover Image](./preview/Cover.png)
+
 ## Features
 
 - Vehicle browsing and search functionality
@@ -50,6 +52,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## Project Structure
 
+```
 next-car-renting-platform/
 
 ├── app/
@@ -65,6 +68,8 @@ next-car-renting-platform/
 ├── public/
 
 ├── styles/
+
+```
 
 
 ## Contributing
