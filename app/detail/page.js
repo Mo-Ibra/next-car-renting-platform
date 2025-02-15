@@ -1,7 +1,13 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import CarDetail from "@/sections/CarDetail";
+
 function Detail() {
     return (
         <div>
-            <h1>Detail</h1>
+            <Navbar />
+            <CarDetail />
+            <Footer />
         </div>
     );
 }

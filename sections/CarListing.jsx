@@ -4,10 +4,21 @@ import FilterSidebar from "@/components/CarFilterSidebar"
 import CarCard from "@/components/CarCard"
 
 import { popularCars, recommendationCars } from "@/data/cars"
+import { useState } from "react";
+import { Loader2 } from "lucide-react";
 
 function CarListing() {
 
+    const [isLoading, setIsLoading] = useState(false);
+
     const allCars = [...popularCars, ...recommendationCars];
+
+    const loadingButton = () => {
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+        }, 1000);
+    }
 
     return (
         <section className="bg-gray-100">
@@ -23,7 +34,17 @@ function CarListing() {
                             ))}
                         </div>
                         <div className="flex justify-center mt-8">
-                            <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Load More</button>
+                            {
+                                isLoading ? (
+                                    <div className="flex justify-center">
+                                        <Loader2 className="w-4 h-4 animate-spin" />
+                                    </div>
+                                ) : (
+                                    <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors" onClick={loadingButton}>
+                                        Load More
+                                    </button>
+                                )
+                            }
                         </div>
                     </main>
                 </div>

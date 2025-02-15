@@ -12,7 +12,7 @@ function PopularCars() {
             <div className="container mx-auto px-4 py-8">
                 <div className="flex items-center justify-between mb-6">
                     <h2 className="text-md text-gray-500 font-semibold">Popular Car</h2>
-                    <Link href="/cars" className="text-blue-600 hover:underline">
+                    <Link href="/category" className="text-blue-600 hover:underline">
                         View All
                     </Link>
                 </div>
