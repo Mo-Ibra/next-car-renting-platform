@@ -5,7 +5,7 @@ import Image from "next/image"
 
 function Hero() {
     return (
-        <header className="bg-gray-100">
+        <section className="bg-gray-100">
             <div className="container mx-auto px-4 py-8">
                 <div className="grid md:grid-cols-2 gap-6">
 
@@ -66,7 +66,7 @@ function Hero() {
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
     )
 }
 

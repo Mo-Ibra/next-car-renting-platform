@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { Bell, Filter, Heart, Search, Settings } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -7,8 +8,25 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import Link from "next/link"
 
 function Navbar() {
+    const [isScrolled, setIsScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 10) {
+                setIsScrolled(true)
+            } else {
+                setIsScrolled(false)
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
     return (
-        <header className="border-b">
+        <header className={`sticky top-0 z-50 bg-white transition-all duration-300 ${
+            isScrolled ? 'shadow-md' : ''
+        } border-b`}>
             <div className="container mx-auto px-4">
                 <div className="flex h-16 items-center justify-between gap-4">
 
