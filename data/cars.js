@@ -45,7 +45,7 @@ export const popularCars = [
 
 export const recommendationCars = [
     {
-        id: "1",
+        id: "5",
         name: "All New Rush",
         type: "SUV",
         image: "/images/recommendation-cars/1.svg",
@@ -55,7 +55,7 @@ export const recommendationCars = [
         price: 99.0,
     },
     {
-        id: "2",
+        id: "6",
         name: "CR - V",
         type: "Sport",
         image: "/images/recommendation-cars/2.svg",
@@ -65,7 +65,7 @@ export const recommendationCars = [
         price: 99.0,
     },
     {
-        id: "3",
+        id: "7",
         name: "New MG ZS",
         type: "Sport",
         image: "/images/recommendation-cars/3.svg",
@@ -75,7 +75,7 @@ export const recommendationCars = [
         price: 99.0,
     },
     {
-        id: "4",
+        id: "8",
         name: "MG ZX Exclusice",
         type: "Hatchback",
         image: "/images/recommendation-cars/4.svg",
@@ -85,7 +85,7 @@ export const recommendationCars = [
         price: 99.0,
     },
     {
-        id: "5",
+        id: "9",
         name: "MG ZX Exclusice",
         type: "Hatchback",
         image: "/images/recommendation-cars/5.svg",
@@ -95,7 +95,7 @@ export const recommendationCars = [
         price: 99.0,
     },
     {
-        id: "6",
+        id: "10",
         name: "CR - V",
         type: "Hatchback",
         image: "/images/recommendation-cars/6.svg",
@@ -105,7 +105,7 @@ export const recommendationCars = [
         price: 99.0,
     },
     {
-        id: "7",
+        id: "11",
         name: "New MG ZS",
         type: "Hatchback",
         image: "/images/recommendation-cars/7.svg",
@@ -115,7 +115,7 @@ export const recommendationCars = [
         price: 99.0,
     },
     {
-        id: "8",
+        id: "12",
         name: "New MG ZS",
         type: "Hatchback",
         image: "/images/recommendation-cars/8.svg",
