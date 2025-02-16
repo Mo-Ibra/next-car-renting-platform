@@ -52,7 +52,7 @@ function Navbar() {
                     <div className="flex items-center gap-2">
 
                         {/* Theme Toggle Button */}
-                        <Button variant="ghost" size="icon" className="hidden sm:inline-flex" onClick={toggleTheme}>
+                        <Button variant="ghost" size="icon" onClick={toggleTheme}>
                             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
                         </Button>
 
