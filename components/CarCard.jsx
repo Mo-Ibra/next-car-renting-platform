@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { FuelIcon as GasPump, Gauge, Users } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 function CarCard({ car }) {
     const [isFavorite, setIsFavorite] = useState(false)
@@ -47,7 +48,9 @@ function CarCard({ car }) {
                         <p className="text-sm text-muted-foreground line-through">${car.originalPrice.toFixed(2)}</p>
                     )}
                 </div>
-                <Button className="bg-blue-600 hover:bg-blue-700">Rent Now</Button>
+                <Link href="/detail">
+                    <Button className="bg-blue-600 hover:bg-blue-700">Rent Now</Button>
+                </Link>
             </CardFooter>
         </Card>
     )

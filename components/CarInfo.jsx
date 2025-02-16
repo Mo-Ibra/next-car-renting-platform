@@ -38,7 +38,7 @@ export default function CarInfo() {
 
     return (
         <div className="container mx-auto px-4 py-8">
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid xl:grid-cols-2 gap-8">
                 {/* Left Column - Images */}
                 <div className="space-y-4">
                     
