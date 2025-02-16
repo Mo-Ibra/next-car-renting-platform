@@ -75,7 +75,7 @@ function Navbar() {
                         </Button>
 
                         <Avatar className="h-8 w-8 cursor-pointer">
-                            <AvatarImage src="/images/avatar/1.png" alt="User" />
+                            <AvatarImage src="/images/avatar/1.svg" alt="User" />
                         </Avatar>
                     </div>
 
