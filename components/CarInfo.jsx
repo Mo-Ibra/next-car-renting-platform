@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Heart, Star } from "lucide-react"
+import Link from "next/link"
 
 const thumbnails = [
     {
@@ -120,9 +121,11 @@ export default function CarInfo() {
                             </div>
                             <span className="text-muted-foreground line-through">$100.00</span>
                         </div>
-                        <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                            Rent Now
-                        </Button>
+                        <Link href="/payment">
+                            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                                Pay Now
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
