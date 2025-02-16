@@ -8,6 +8,8 @@ A modern car rental platform built with cutting-edge technologies to provide a s
 
 - Vehicle browsing and search functionality
 - Secure booking and payment processing
+- Responsive design for optimal user experience
+- Smooth animations and transitions
 
 ## Tech Stack
 

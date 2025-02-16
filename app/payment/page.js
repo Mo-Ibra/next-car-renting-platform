@@ -1,7 +1,13 @@
+import Footer from "@/components/Footer";
+import PaymentForm from "@/sections/Payment";
+import Navbar from "@/components/Navbar";
+
 function Payment() {
     return (
         <div>
-            <h1>Payment</h1>
+            <Navbar />
+            <PaymentForm />
+            <Footer />
         </div>
     );
 }
