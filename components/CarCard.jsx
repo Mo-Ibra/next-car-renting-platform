@@ -23,19 +23,19 @@ function CarCard({ car }) {
                 <div className="relative h-[120px] w-full">
                     <Image src={car.image || "/placeholder.svg"} alt={car.name} fill className="object-contain" />
                 </div>
-                <div className="grid grid-cols-3 gap-2 py-4">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <div className="flex items-center justify-between gap-2 py-4">
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
                         <GasPump className="h-4 w-4" />
                         <span>{car.fuel}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
                         <Gauge className="h-4 w-4" />
                         <span>{car.transmission}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Users className="h-4 w-4" />
-                        <span>{car.capacity}</span>
-                    </div>
+                </div>
+                <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                    <Users className="h-4 w-4" />
+                    <span>{car.capacity}</span>
                 </div>
             </CardContent>
             <CardFooter className="flex items-center justify-between mt-auto">
@@ -49,7 +49,7 @@ function CarCard({ car }) {
                     )}
                 </div>
                 <Link href="/detail">
-                    <Button className="bg-blue-600 hover:bg-blue-700">Rent Now</Button>
+                    <Button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 text-white py-0.5">Rent</Button>
                 </Link>
             </CardFooter>
         </Card>

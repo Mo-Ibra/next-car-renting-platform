@@ -122,7 +122,7 @@ export default function CarInfo() {
                             <span className="text-muted-foreground line-through">$100.00</span>
                         </div>
                         <Link href="/payment">
-                            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 text-white">
                                 Pay Now
                             </Button>
                         </Link>
