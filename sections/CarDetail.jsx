@@ -3,6 +3,8 @@
 import FilterSidebar from "@/components/CarFilterSidebar"
 import CarInfo from "@/components/CarInfo";
 import CarReview from "@/components/CarReview";
+import RecomendationCars from "./RecomendationCars";
+import PopularCars from "./PopularCars";
 
 function CarListing() {
     return (
@@ -15,6 +17,8 @@ function CarListing() {
                     <main className="md:col-span-3">
                         <CarInfo />
                         <CarReview />
+                        <PopularCars />
+                        <RecomendationCars withButton={false} carLimit={4} />
                     </main>
                 </div>
             </div>
