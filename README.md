@@ -4,12 +4,20 @@ A modern car rental platform built with cutting-edge technologies to provide a s
 
 ![Cover Image](./preview/Cover.png)
 
+## ScreenShots
+
+![Home Page](./preview/1.png)
+![Home Page Dark](./preview/2.png)
+![Car Detail Light](./preview/3.png)
+![Car Detail Dark](./preview/4.png)
+
 ## Features
 
 - Vehicle browsing and search functionality
 - Secure booking and payment processing
 - Responsive design for optimal user experience
 - Smooth animations and transitions
+- Dark and Light theme
 
 ## Tech Stack
 
